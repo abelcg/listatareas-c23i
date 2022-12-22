@@ -1,11 +1,11 @@
 import React from 'react';
 import Alert from 'react-bootstrap/Alert'
 
-const Status = ({ comision, estado }) => {
+const Status = ({ commission, enable }) => {
     return (
         <div>
-            {estado ? <Alert variant="info">
-                La comisión {comision} está habilitada
+            {enable ? <Alert variant="info">
+                La comisión {commission} está habilitada
             </Alert> : null}
         </div>
     );
